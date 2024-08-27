@@ -1,3 +1,11 @@
+    import React from "react"
+    // ReferenceError: ReactDOM is not defined
+    // import ReactDom from "react-dom"
+    import ReactDOM from "react-dom/client";
+
+    //npx parcel build index.html -> Production Build now can be pushed-> in dist folder
+
+
     //const heading = React.createElement("h1", {}, "hello world")
      //create h1 elemnt in react now put it in root where all react will run and we dom for that
     //create element takes 3 argument
@@ -7,6 +15,12 @@
         {id:"heading"}, 
         "hello world"
     )
+    //package.json is configuration for npm. Bundlers help create code ready for production. DEV dependency used in development phase
+    //package lock.json ->  versionss . Parcel needs help of lot more packages so node modules main npm ko kehke packages 
+    //dependencies dalwae called transitive dependency. ECah dependency has its own dependency ie package.json file
+    //git ignore file -> ab nodemodules 135 files no need to put on github so package jsons ke sath sb dalo .gitignore
+    //agr nhi bhi dala uda toh yr package files has version do npm install firse wapas aa jaega
+    //now after npx parcel index.html our server is created we are assigned port 1234 and url is of localhost
 
     //returns object not an actual tag yet
     //here in {} we give attributes style css
@@ -30,7 +44,7 @@
             React.createElement(
                 "h1",
                 {},
-                "i am a h1 tag"
+                "i am student"
             )
         ) 
     );
