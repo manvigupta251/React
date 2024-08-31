@@ -6,15 +6,16 @@
     //npx parcel build index.html -> Production Build now can be pushed-> in dist folder
 
 
-    //const heading = React.createElement("h1", {}, "hello world")
+    /*const heading = React.createElement("h1", {}, "hello world")
      //create h1 elemnt in react now put it in root where all react will run and we dom for that
-    //create element takes 3 argument
+    //create element takes 3 argument   //JSX is just a syntax which is html like ie it is a syntax extension to JavaScript.
+    //JSX produces React “elements”. 
+    By default, React DOM escapes any values embedded in JSX before rendering them. 
+    Thus it ensures that you can never inject anything that’s not explicitly written in your application. 
+    Everything is converted to a string before being rendered. This helps prevent XSS (cross-site-scripting) attacks.
+    Babel compiles JSX down to React.createElement() calls.*/
 
-    const heading = React.createElement(
-        "h1", 
-        {id:"heading"}, 
-        "hello world"
-    )
+    
     //package.json is configuration for npm. Bundlers help create code ready for production. DEV dependency used in development phase
     //package lock.json ->  versionss . Parcel needs help of lot more packages so node modules main npm ko kehke packages 
     //dependencies dalwae called transitive dependency. ECah dependency has its own dependency ie package.json file
@@ -29,7 +30,7 @@
     const root = ReactDOM.createRoot(document.getElementById("root"));
 
     //take object create a h1 tag that browser understands and keep it in the root
-    root.render(heading);
+     root.render(heading);
    
     
     
